@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Reno
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .header
+      .header__left
+        =link_to 'Reno', '/', class: 'title text'
+        =link_to 'はじめての方', '/', class: 'tyutorial text'
+        =link_to 'サービス', '/', class: 'servise text'
+      .header__right
+        =link_to '/', class: 'phone text clearfix' do
+          .phone-btn
+            %P お問い合わせ
+    = yield

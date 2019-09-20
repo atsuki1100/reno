@@ -1,0 +1,57 @@
+.header {
+  background-color: rgb(247, 208, 202);
+  width: 100vw;
+  height: 80px;
+  position: relative;
+  &__left {
+    margin-left: 150px;
+    position: relative;
+    float: left;
+    .text {
+      position: relative;
+      display: block;
+      margin-right: 50px;
+      text-decoration: none;
+      float: left;
+    }
+    .title {
+      font-size: 350%;
+      color: tomato;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .tyutorial {
+      color: black;
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+    .servise {
+      color: black;
+      margin-top: 30px;
+    }
+  }
+  &__right {
+    margin-right: 150px;
+    position: relative;
+    float: right; 
+    .phone {
+      position: relative;
+      display: block;
+      margin-right: 50px;
+      text-decoration: none;
+      height: 100%;
+      .phone-btn {
+        height: 80px;
+        width: 150px;
+        background-color: tomato;
+        text-align: center;
+        display: table;
+        p {
+          color: black;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
