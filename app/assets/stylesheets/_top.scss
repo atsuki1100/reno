@@ -1,12 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.back-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("apa.jpg");
+  background-size: cover;
+}
 .header {
   background-color: rgb(247, 208, 202);
   width: 100vw;
   height: 80px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 2;
   &__left {
-    margin-left: 150px;
+    margin-left: 180px;
     position: relative;
     float: left;
+    .reno-icon {
+      position: absolute;
+      left: -100px;
+    }
     .text {
       position: relative;
       display: block;
@@ -19,6 +43,7 @@
       color: tomato;
       font-weight: 600;
       margin-top: 10px;
+      font-family: 'Times New Roman', Times, serif;
     }
     .tyutorial {
       color: black;
@@ -39,13 +64,15 @@
       display: block;
       margin-right: 50px;
       text-decoration: none;
-      height: 100%;
       .phone-btn {
-        height: 80px;
+        height: 50px;
         width: 150px;
         background-color: tomato;
         text-align: center;
         display: table;
+        position: relative;
+        top: 15px;
+        border-radius: 25px;
         p {
           color: black;
           display: table-cell;
@@ -54,4 +81,125 @@
       }
     }
   }
+}
+.main-apile {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  background-color: rgba(1,1,1,0.5);
+  &__text {
+    text-align: center;
+    position: relative;
+    top: 235px;
+    h2 {
+      font-size: 220%;
+      color: white;
+    }
+    p {
+    margin-top: 50px;
+    font-size: 150%;
+    color: white;
+    }
+    .newC {
+      text-decoration: none;
+      display: table;
+      height: 60px;
+      width: 250px;
+      margin: 0 auto;
+      margin-top: 80px;
+      background-color: rgb(180, 6, 6);
+      border: solid 1px rgb(71, 0, 0);
+      p {
+        font-size: 100%;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .newC:hover {
+      background-color: rgb(218, 4, 4);
+    }
+  }
+}
+.main-flow {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  position: relative;
+  &__text {
+    position: relative;
+    top: 50px;  
+    .nal {
+      font-size: 400%;
+    }
+  }
+  &__ruru {
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    display: inline-block;
+    .ruru-1 {
+      float: left;
+      margin: 0 30px;
+      border: 1px solid black;
+      background-color: gray;
+      .ima-1 {
+        width: 350px;
+        height: 200px;
+        background-image: url("apa.jpg");
+        background-size: cover;
+      }
+    }
+    .ruru-2 {
+      float: left;
+      margin: 0 30px;
+      border: 1px solid black;
+      background-color: gray;
+      .ima-2 {
+        width: 350px;
+        height: 200px;
+        background-image: url("apa.jpg");
+        background-size: cover;
+      }
+    }
+    .ruru-3 {
+      float: left;
+      margin: 0 30px;
+      border: 1px solid black;
+      background-color: gray;
+      .ima-3 {
+        width: 350px;
+        height: 200px;
+        background-image: url("apa.jpg");
+        background-size: cover;
+      }
+    }
+  }
+  .r-1 {
+    position: absolute;
+    left: 480px;
+    top: 460px;
+  }
+  .r-2 {
+    position: absolute;
+    right: 470px;
+    top: 460px;
+  }
+}
+.main-company {
+  width: 100vw;
+  background-color: blue;
+  &__text {
+    height: 100px;
+  }
+  &__icon {
+    height: 400px;
+  }
+  &__details {
+    height: 500px;
+  }
+}
+.main-fee {
+  height: 300px;
+  background-color: pink;
 }
