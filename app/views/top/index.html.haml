@@ -1,33 +1,85 @@
 .main-apile
   .main-apile__text
-    %h2 PR動画をとって限定グッズを手に入れよう！！
+    %h2 動画を撮って好きなブランドの一員になろう！！
     %p 最新のPR動画革命
     =link_to '/', class: 'newC' do
       %p はじめてのかたはこちら
 .main-flow
   .main-flow__text
-    %h2.nal Renoの流れ
+    %h2.nal RENOの流れ
   .main-flow__ruru
     .ruru-1
       .ima-1
-      .docu
-        %p 流れ1
     .ruru-2
       .ima-2
-      .docu
-        %p 流れ2
     .ruru-3
       .ima-3
-      .docu
-        %p 流れ3
-  %i.fas.fa-arrow-right.fa-5x.r-1
-  %i.fas.fa-arrow-right.fa-5x.r-2
+  =link_to '/', class: 'detail-flow' do
+    %p 詳しくはこちら
+  
+  %i.fas.fa-arrow-right.fa-3x.r-1
+  %i.fas.fa-arrow-right.fa-3x.r-2
   
 .main-company
   .main-company__text
-    %p 提携アパレル企業
+    %h2.aparels 提携アパレル企業
+  .main-company__introduse
+    %p.aparel-ins RENOではたくさんのアパレル企業と提携をしており、
+    %p.aparel-ins 自分のお気に入りのPR動画を作ることができます。
   .main-company__icon
-  .main-company__details
-.main-fee
-  お見積もり
+    ここに企業のロゴが入ります。
+  .main-company__details.clearfix
+    .minipage
+      .pic-aparel.nike-ima
+      .tex-aparel.nike-paf
+        .company-name
+          %p NIKE
+        .company-guid
+          %p 19.10/1 ~ 19.12/1
+          %p 靴
+          %p 新商品
+          %p 男性向け
+      .page-cover
+    .minipage
+      .pic-aparel.adidas-ima
+      .tex-aparel.adidas-paf
+        .company-name
+          %p adidas
+        .company-guid
+          %p 19.10/10 ~ 19.12/10
+          %p 靴
+          %p 新商品
+          %p 男女OK
+      .page-cover
+      .main-company__details
+    .nike.minipage
+      .pic-aparel
+      .tex-aparel
+      .page-cover
+      .main-company__details
+    .nike.minipage
+      .pic-aparel
+      .tex-aparel
+      .page-cover
+      .main-company__details
+    .nike.minipage
+      .pic-aparel
+      .tex-aparel
+      .page-cover
+      .main-company__details
+    .nike.minipage
+      .pic-aparel
+      .tex-aparel
+      .page-cover
+      .main-company__details
+    .nike.minipage
+      .pic-aparel
+      .tex-aparel
+      .page-cover
+      .main-company__details
+    .nike.minipage
+      .pic-aparel
+      .tex-aparel
+      .page-cover
+      .main-company__details
 .back-image

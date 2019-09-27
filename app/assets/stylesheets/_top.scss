@@ -1,11 +1,28 @@
 * {
   box-sizing: border-box;
 }
-.clearfix::after{
-  content: "";
+
+/* for modern brouser */
+.clearfix:after {
+  content: ".";
   display: block;
   clear: both;
+  height: 0;
+  visibility: hidden;
 }
+/* IE7,MacIE5 */
+.clearfix {
+  display: inline-block;
+}
+/* WinIE6 below, Exclude MacIE5 \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/**/
+
 .back-image {
   position: fixed;
   top: 0;
@@ -17,7 +34,7 @@
   background-size: cover;
 }
 .header {
-  background-color: rgb(247, 208, 202);
+  background-color: rgb(51, 49, 117);
   width: 100vw;
   height: 80px;
   position: fixed;
@@ -34,24 +51,36 @@
     .text {
       position: relative;
       display: block;
-      margin-right: 50px;
+      margin-right: 35px;
       text-decoration: none;
       float: left;
     }
     .title {
       font-size: 350%;
-      color: tomato;
+      color: rgb(175, 174, 90);
       font-weight: 600;
       margin-top: 10px;
       font-family: 'Times New Roman', Times, serif;
     }
     .tyutorial {
-      color: black;
+      color: rgb(175, 174, 90);
       margin-top: 30px;
       margin-left: 50px;
     }
     .servise {
-      color: black;
+      color: rgb(175, 174, 90);
+      margin-top: 30px;
+    }
+    .brand {
+      color: rgb(175, 174, 90);
+      margin-top: 30px;
+    }
+    .canpen {
+      color: rgb(175, 174, 90);
+      margin-top: 30px;
+    }
+    .info {
+      color: rgb(175, 174, 90);
       margin-top: 30px;
     }
   }
@@ -67,7 +96,7 @@
       .phone-btn {
         height: 50px;
         width: 150px;
-        background-color: tomato;
+        background-color: rgb(189, 138, 43);
         text-align: center;
         display: table;
         position: relative;
@@ -140,63 +169,155 @@
     display: inline-block;
     .ruru-1 {
       float: left;
-      margin: 0 30px;
+      margin: 0 50px;
       border: 1px solid black;
       background-color: gray;
       .ima-1 {
         width: 350px;
-        height: 200px;
-        background-image: url("apa.jpg");
+        height: 247px;
+        background-image: url("ruru1.jpg");
         background-size: cover;
       }
     }
     .ruru-2 {
       float: left;
-      margin: 0 30px;
+      margin: 0 50px;
       border: 1px solid black;
       background-color: gray;
       .ima-2 {
         width: 350px;
-        height: 200px;
-        background-image: url("apa.jpg");
+        height: 247px;
+        background-image: url("ruru2.jpg");
         background-size: cover;
       }
     }
     .ruru-3 {
       float: left;
-      margin: 0 30px;
+      margin: 0 50px;
       border: 1px solid black;
       background-color: gray;
       .ima-3 {
         width: 350px;
-        height: 200px;
-        background-image: url("apa.jpg");
+        height: 247px;
+        background-image: url("ruru3.jpg");
         background-size: cover;
       }
     }
   }
+  .detail-flow {
+    text-decoration: none;
+    display: table;
+    height: 60px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: rgb(180, 6, 6);
+    border: solid 1px rgb(71, 0, 0);
+    position: relative;
+    top: 230px;
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+    }
+  }
+  .detail-flow:hover {
+    background-color: rgb(218, 4, 4);
+  }
   .r-1 {
     position: absolute;
-    left: 480px;
-    top: 460px;
+    z-index: 2;
+    left: 470px;
+    top: 300px;
   }
   .r-2 {
     position: absolute;
     right: 470px;
-    top: 460px;
+    top: 300px;
   }
 }
 .main-company {
   width: 100vw;
-  background-color: blue;
+  background-color: rgb(221, 221, 221);
+  text-align: center;
+  padding-top: 100px;
   &__text {
-    height: 100px;
+    h2 {
+      font-size: 400%;
+    }
+  }
+  &__introduse {
+    margin-top: 50px;
+    line-height: 2;
   }
   &__icon {
     height: 400px;
+    margin: 50px 30px 0;
+    border: dashed 1px black;
   }
   &__details {
-    height: 500px;
+    margin: 100px 35px 0;
+    .minipage {
+      height: 350px;
+      width: 280px;
+      float: left;
+      margin: 20px 30px;
+      border-radius: 3px;
+      box-shadow: 1px 1px 2px;
+      .pic-aparel {
+        width: 100%;
+        height: 130px;
+        border: dashed 1px black;
+        border-radius: 5px 5px 0 0;
+      }
+      .tex-aparel {
+        height: calc(100% - 130px);
+        width: 100%;
+        border: dashed 1px black;
+        border-radius: 0 0 5px 5px;
+        padding: 20px 10px 10px;
+        .company-name {
+          margin-bottom: 15px;
+          p {
+            font-size: 120%;
+            color: rgb(0, 0, 160);
+            font-weight: 600;
+          }
+        }
+        .company-guid {
+          p {
+            margin-bottom: 10px;
+            border: solid 1px rgb(172, 172, 172);
+          }
+        }
+      }
+      .page-cover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 350px;
+      }
+      .page-cover:hover {
+        background-color: red;
+      }
+      .nike-ima {
+        background-image: url("nike.jpg");
+        background-size: cover;
+        border: none;
+      }
+      .nike-paf {
+        background-color: rgb(255, 255, 255);
+        border: none;
+      }
+      .adidas-ima {
+        background-image: url("adidas.jpg");
+        background-size: cover;
+        border: none;
+      }
+      .adidas-paf {
+        background-color: rgb(255, 255, 255);
+        border: none;
+      }
+    }
   }
 }
 .main-fee {
