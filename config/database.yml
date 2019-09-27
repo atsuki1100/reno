@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: reno_production
-  username: reno
-  password: <%= ENV['RENO_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
