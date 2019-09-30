@@ -1,0 +1,79 @@
+.flow-page {
+  margin-top: 80px;
+  padding: 0 80px;
+  background-color: rgb(241, 241, 241);
+  text-align: left;
+  position: relative;
+  overflow:hidden;
+  .sub-title {
+    margin: 80px auto 100px;
+    position: relative;
+    display: block;
+    color: rgb(228, 3, 3);
+    font-size: 480%;
+    border-bottom: dotted 4px rgb(228, 3, 3);
+    padding-bottom: 10px;
+  }
+}
+
+.flow-block {
+  margin: 0 0 80px;
+  text-align: center;
+  .mark-text {
+    color: rgb(228, 3, 3);
+    display: inline-block;
+    font-size: 250%;
+    position: absolute;
+    left: 150px;
+  }
+  .flow-messe {
+    position: relative;
+    display: inline-block;
+    font-size: 250%;
+    color: rgb(51, 51, 51);
+  }
+  .flow-image {
+    width: 551px;
+    height: 390px;
+    position: relative;
+    margin: 30px auto 20px;
+  }
+  .flow-d {
+    text-align: left;
+    font-size: 150%;
+    display: inline-block;
+    color: gray;
+  }
+}
+
+.step-1 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 50px;
+  .flow-messe {
+    left: 60px;
+  }
+  .flow-image {
+    background-image: url("ruru1.jpg");
+    background-size: cover;
+  }
+}
+.step-2 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 50px;
+  .flow-messe {
+    left: 110px;
+  }
+  .flow-image {
+    background-image: url("ruru2.jpg");
+    background-size: cover;
+  }
+}
+.step-3 {
+  .flow-messe {
+    left: 60px;
+  }
+  .flow-image {
+    background-image: url("ruru3.jpg");
+    background-size: cover;
+  }
+}
